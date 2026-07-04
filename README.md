@@ -21,12 +21,12 @@ Los tres servicios se comunican dentro del clúster mediante DNS interno de Kube
 - **CI/CD:** GitHub Actions, con build automático de imágenes, push a ECR y despliegue en el clúster ante cada cambio en la rama `main`
 
 ## Estructura del repositorio
-.
-├── backend/          # API REST (Node.js + Express)
-├── frontend/          # Interfaz web (HTML/JS + Nginx)
-├── db/               # Base de datos MySQL (imagen + script de inicialización)
-├── k8s/              # Manifiestos de Kubernetes (Deployments, Services, HPA, Secrets)
-└── .github/workflows/ # Pipeline de integración y despliegue continuo
+
+- `backend/` — API REST (Node.js + Express)
+- `frontend/` — Interfaz web (HTML/JS + Nginx)
+- `db/` — Base de datos MySQL (imagen + script de inicialización)
+- `k8s/` — Manifiestos de Kubernetes (Deployments, Services, HPA, Secrets)
+- `.github/workflows/` — Pipeline de integración y despliegue continuo
 
 ## Tecnologías utilizadas
 
